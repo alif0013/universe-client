@@ -1,4 +1,4 @@
-import React from 'react';
+import LeftMenu from './LeftMenu/LeftMenu';
 
 const Home = () => {
     return (
@@ -6,9 +6,20 @@ const Home = () => {
 
             <div className='lg:w-[1200px] flex'>
 
-                 <div className='hidden text-center  lg:w-[270px] lg:block'>left menu</div>
-                 <div className='bg-white text-center w-full lg:w-[660px]'> content</div>
-                 <div className='hidden text-center  lg:w-[270px] lg:block'> right</div>
+                <div className='hidden text-center  lg:w-[270px] lg:block'>
+                    <LeftMenu></LeftMenu>
+                </div>
+
+
+                <div className='bg-white text-center w-full lg:w-[660px]'>
+                    content
+                </div>
+
+
+                <div className='hidden text-center  lg:w-[270px] lg:block'>
+                    right
+                </div>
+
             </div>
         </div>
     );
