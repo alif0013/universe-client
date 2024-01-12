@@ -12,8 +12,10 @@ const MainLayouts = () => {
                 <div className='bg-[#272930]'>
                     <Navbar></Navbar>
                 </div>
-                <Outlet></Outlet>
-                <Toaster></Toaster>
+                <div className='bg-[#F2F2F2]'>
+                    <Outlet></Outlet>
+                    <Toaster></Toaster>
+                </div>
                 {/* footer here */}
             </div>
         </div>
