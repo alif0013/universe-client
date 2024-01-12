@@ -1,13 +1,17 @@
 import React from 'react';
 import { Toaster } from 'react-hot-toast';
 import { Outlet } from 'react-router-dom';
+import Navbar from '../Shared/Navbar/Navbar';
 
 const MainLayouts = () => {
     return (
         <div>
-            <div className='lg:w-[1200px] mx-auto'>
 
-                {/* <Navbar></Navbar> */}
+
+            <div>
+                <div className='bg-[#272930]'>
+                    <Navbar></Navbar>
+                </div>
                 <Outlet></Outlet>
                 <Toaster></Toaster>
                 {/* footer here */}
